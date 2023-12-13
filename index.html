@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная</title>
+<style>
+body, html {
+margin: 0;
+min-height: 100vh;
+padding: 0;
+height: 100%;
+background-color: pink;
+font-family: Arial, sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.car-card {
+background: #fff;
+border: 1px solid #ddd;
+padding: 15px;
+border-radius: 4px;
+margin: 5px;
+flex: 0 0 calc(20% - 10px);
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.car-card img {
+width: 100%;
+display: block;
+border-radius: 5px;
+}
+.car-card h2 {
+font-size: 1em;
+margin: 4px 8px;
+}
+.car-card p {
+font-size: 14px;
+margin: 4px 8px;
+color: #666;
+}
+header {
+  background: rgba(177, 177, 177, 0.6); 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 55px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%; 
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-container {
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+}
+.logo {
+  max-height: 60px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.logo:hover {
+  cursor: pointer;
+  color: red;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-size: 18px;
+}
+nav a:hover {
+    cursor: pointer;
+    color: red;
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
+.video {
+    width: 100%; 
+    height: auto; 
+}
+.video img {
+    width: 100%; 
+    height: 600px; 
+    border-radius: 15px;
+}
+footer {
+    background: black; 
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-info,
+.footer-social,
+.to-top {
+    margin: 10px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+   
+}
+
+.footer-info p a,
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 10px;
+}
+
+.footer-info p a:hover,
+.footer-info a:hover {
+    color: red;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+.to-top-link {
+    display: inline-block;
+    background-color: pink;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.to-top-link:hover {
+    background-color: red;
+}
+.footer-copy {
+    padding-top: 20px;
+}
+@media screen and (min-width: 1000px) {
+header {
+    position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+}
+@media screen and (max-width: 1000px) {
+
+    header {
+        width: auto;
+        height: auto;
+        left: 0;
+        transform: none;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .car-card {
+        flex: 1 1 auto;
+    }
+    .video img, .car-card img {
+        max-width: 100%;
+        height: 200px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    footer {
+        width: 100%;
+    }
+    .video img {
+        border-radius: 15px;
+    }
+}
+</style>
+</head>
+<body>
+<header> 
+    
+    <div class="logo-container">
+        <a href="ppp.html" class="logo">
+            <h1>Nissan Skyline</h1>
+        </a>
+    </div>
+    <nav>
+        <a href="ppp1.html">Описание</a>
+        <a href="ppp2.html">Характеристики</a>
+        <a href="ppp3.html">Галерея</a>
+        <a href="ppp4.html">История</a>
+    </nav>
+</header>
+<div class="video">
+<img src="image/1463136777_2cffef73-0e05-4d1f-8a2f-df195d5f848e.jpg">
+</div>
+<div class="grid-container">
+<div class="car-card">
+<img src="image/S1.PNG" alt="Nissan Skyline (R35)">
+<h2>Nissan GT-R (R35)</h2>
+<p>2007 - н.в.</p>
+<p>Nissan GT-R R35, представленный в 2007 году, является вершиной инженерного искусства Nissan. 
+    Этот спортивный автомобиль оборудован 3.8-литровым твин-турбо двигателем V6, системой полного привода ATTESA E-TS Pro и передовыми технологиями, что делает его одним из лучших в своем классе. 
+    Сочетание мощности, динамики и выдающегося дизайна превращают GT-R R35 в настоящую икону автомобильной индустрии.</p>
+</div>
+<div class="car-card">
+<img src="image/S2.PNG" alt="Nissan Skyline (R34)">
+<h2>Nissan Skyline GT-R (R34)</h2>
+<p>1999 - 2002</p>
+<p>Nissan Skyline GT-R R34 стал легендой благодаря своему участию в автоспорте и культовому дизайну. 
+    Представленный в конце 90-х годов, R34 оснащен знаменитым двигателем RB26DETT и системой полного привода ATTESA E-TS Pro. 
+    Его выдающаяся производительность и иконичный внешний вид делают его одним из самых желанных среди коллекционеров и автолюбителей.</p>
+</div>
+<div class="car-card">
+<img src="image/S3.PNG" alt="Nissan Skyline (R33)">
+<h2>Nissan Skyline GT-R (R33)</h2>
+<p>1995 - 1998</p>
+<p>Nissan Skyline GT-R R33, представленный в середине 90-х годов, продолжил великое наследие линейки Skyline GT-R. 
+    Его выдающиеся характеристики, надежность и харизматичный дизайн утвердили R33 в качестве важного момента в истории японского автопрома. 
+    Система полного привода и мощный двигатель RB26DETT, превратили R33 в символ автоспорта и придали ему статус настоящей автомобильной легенды.</p>
+</div>
+<div class="car-card">
+<img src="image/S4.PNG" alt="Nissan Skyline (R32)">
+<h2>Nissan Skyline GT-R (R32)</h2>
+<p>1989 - 1994</p>
+<p>Nissan Skyline GT-R R32, дебютировавший в начале 90-х годов, считается классическим представителем линейки Skyline GT-R. 
+    Его надежность, выдающаяся производительность и стильный дизайн сделали R32 одним из наиболее важных автомобилей в истории японского автопрома. 
+    Система полного привода и легендарный двигатель RB26DETT помогли сделать R32 легендой автоспорта.</p>
+</div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><b>Skyline</b>: скорость, практичность и свобода</p>
+            <p><b>Email:</b> <a href="mailto:sk_58@vk.com">sk_58@vk.com</a></p>
+            <p><b>Телефон:</b> <a href="tel:+79211248158">+79211248158</a></p>
+        </div>
+        <div class="footer-social">
+            <a href="https://vk.com/sk_58" target="_blank"><img src="images/vk.png"></a>
+            <a href="https://t.me/andry_skobelev" target="_blank"><img src="images/tg.png"></a>
+        </div>
+        <div class="to-top">
+            <a href="#top" class="to-top-link">Наверх</a>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p><b>Разработчик сайта:</b> Скобелев Андрей</p>
+    </div>
+</footer>
+</body>
+</html>

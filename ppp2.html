@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Характеристики</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color:pink;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: rgba(177, 177, 177, 0.6); 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 55px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%; 
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-container {
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+}
+.logo {
+  max-height: 60px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.logo:hover {
+  cursor: pointer;
+  color: red;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-size: 18px;
+}
+nav a:hover {
+  cursor: pointer;
+  color: red;
+}
+footer {
+    background: black; 
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-info,
+.footer-social,
+.to-top {
+    margin: 10px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+   
+}
+
+.footer-info p a,
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 10px;
+    /* Добавляем небольшой отступ слева от ссылки */
+}
+
+.footer-info p a:hover,
+.footer-info a:hover {
+    color: red;
+    /* Изменение цвета при наведении */
+}
+
+/* Стилизция иконок социальных сетей */
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+/* Стилизация ссылки наверх */
+.to-top-link {
+    display: inline-block;
+    background-color: pink;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.to-top-link:hover {
+    background-color: red;
+}
+.footer-copy {
+    padding-top: 20px;
+}
+.specs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: auto;
+  }
+  .spec-block {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height:auto;
+  }
+  .spec-title {
+    font-size: 1.5rem;
+    color: #101010;
+    margin-bottom: 10px;
+  }
+  .spec-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .spec-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .spec-list li:last-child {
+    border-bottom: none;
+  }
+  .spec-list li b {
+    font-weight: bold;
+  }
+  .car-title {
+  text-align: left;
+  color: #333;
+  margin: 0; 
+  display: flex;
+  padding: 20px;
+  font-size: 36px;
+  align-items: center; 
+}
+  .vehicle-image {
+    flex: 1;
+    text-align: center;
+  }
+  .vehicle-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+header {
+    width: auto;
+    height: auto;
+    left: 0;
+    transform: none;
+}
+nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+nav a {
+    display: block;
+    margin: 10px 0;
+}
+
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="ppp.html" class="logo">
+        <h1>Nissan Skyline</h1>
+      </a>
+    </div>
+    <nav>
+      <a href="ppp1.html">Описание</a>
+      <a href="ppp3.html">Галерея</a>
+      <a href="ppp4.html">История</a>
+    </nav>
+  </header>
+  <div class="car-title">
+    <h1>Nissan GT-R R35</h1>
+  </div>
+  <div class="specs-container">
+    <div class="spec-block">
+      <div class="spec-title">Модификация 3.8 AMT</div>
+    <ul class="spec-list">
+      <li><b>Объем:</b> 3.8 л</li>
+      <li><b>Топливо:</b> АИ-95</li>
+      <li><b>Мощность:</b> 480 л.с.</li>
+      <li><b>Привод:</b> полный</li>
+      <li><b>Коробка:</b> Робот</li>
+      <li><b>Разгон:</b> 3.5 с</li>
+      <li><b>Тип двигателя:</b> бензиновый</li>
+      <li><b>Расход:</b> 12.5 л</li>
+    </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Общая информация</div>
+      <ul class="spec-list">
+        <li><b>Страна марки:</b> Япония</li>
+        <li><b>Класс автомобиля:</b> S</li>
+        <li><b>Количество дверей:</b> 2</li>
+        <li><b>Количество мест:</b> 4</li>
+        <li><b>Расположение руля:</b> Левый/Правый</li> 
+      </ul>
+      
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Подвеска и тормоза</div>
+      <ul class="spec-list">
+        <li><b>Тип передней подвески:</b> независимая, пружинная</li>
+        <li><b>Тип задней подвески:</b> независимая, пружинная</li>
+        <li><b>Передние тормоза:</b> дисковые вентилируемые</li>
+        <li><b>Задние тормоза:</b> дисковые вентилируемые</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Размеры</div>
+      <ul class="spec-list">
+        <li><b>Длина:</b> 4650 мм</li>
+        <li><b>Ширина:</b> 1895 мм</li>
+        <li><b>Высота:</b> 1370 мм</li>
+        <li><b>Колёсная база:</b> 2780 мм</li>
+        <li><b>Клиренс:</b> 130 мм</li>
+        <li><b>Ширина передней колеи:</b> 1590 мм</li>
+        <li><b>Ширина задней колеи:</b> 1600 мм</li>
+        <li><b>Размер колёс:</b> 255/40/R20, 285/35/R20 </li> 
+      </ul>
+      <div class="vehicle-image">
+        <img src="image/раз35.PNG" alt="Автомобиль">
+      </div>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Эксплуатационные показатели</div>
+      <ul class="spec-list">
+        <li><b>Максимальная скорость:</b> 310 км/ч</li>
+        <li><b>Разгон до 100 км/ч:</b> 3.5 с</li>
+        <li><b>Расход топлива, город/трасса/смешанный:</b> 18.2/9.2/12.5 л/100 км</li>
+        <li><b>Марка топлива:</b> АИ-95</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Объём и масса</div>
+      <ul class="spec-list">
+        <li><b>Объем багажника мин/макс:</b> 315 л</li>
+        <li><b>Объём топливного бака:</b> 74 л</li>
+        <li><b>Снаряженная масса:</b> 1750 кг</li>
+        <li><b>Полная масса:</b> 2200 кг</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Трансмиссия</div>
+      <ul class="spec-list">
+        <li><b>Коробка передач:</b> Робот</li>
+        <li><b>Количество передач:</b> 6</li>
+        <li><b>Тип привода:</b> полный</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Двигатель</div>
+      <ul class="spec-list">
+        <li><b>Тип двигателя:</b> Бензиновый</li>
+        <li><b>Расположение цилиндров:</b> V-образное</li>
+        <li><b>Объем двигателя:</b> 3799 см³</li>
+        <li><b>Тип наддува:</b> турбонаддув</li>
+        <li><b>Максимальная мощность:</b> 480 л.с. (353 кВт) при 6400 об/мин</li>
+        <li><b>Максимальный крутящий момент:</b> 588 Н*м при 5200 об/мин</li>
+        <li><b>Расположение цилиндров:</b> V-образное</li>
+        <li><b>Количество цилиндров:</b> 6</li>
+        <li><b>Число клапанов на цилиндр:</b> 4</li>
+        <li><b>Система питания двигателя:</b> распределенный впрыск (многоточечный)</li>
+        <li><b>Степень сжатия:</b> 9</li>
+        <li><b>Диаметр цилиндра и ход поршня:</b> 95.5x88.4 мм</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="car-title">
+    <h1>Nissan Skyline GT-R R34</h1>
+  </div>
+  <div class="specs-container">
+    <div class="spec-block">
+      <div class="spec-title">Модификация 2.6 AMT</div>
+      <ul class="spec-list">
+          <li><b>Объем:</b> 2.6 л</li>
+          <li><b>Топливо:</b> АИ-95</li>
+          <li><b>Мощность:</b> 280 л.с.</li>
+          <li><b>Привод:</b> полный</li>
+          <li><b>Коробка:</b> Механика</li>
+          <li><b>Разгон:</b> 5.5 с</li>
+          <li><b>Тип двигателя:</b> бензиновый</li>
+          <li><b>Расход:</b> 12.3 л</li>
+        </ul>
+    </div>
+
+    <div class="spec-block">
+      <div class="spec-title">Общая информация</div>
+      <ul class="spec-list">
+        <li><b>Страна марки:</b> Япония</li>
+        <li><b>Класс автомобиля:</b> D</li>
+        <li><b>Количество дверей:</b> 4</li>
+        <li><b>Количество мест:</b> 5</li>
+        <li><b>Расположение руля:</b> Правый</li> 
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Подвеска и тормоза</div>
+      <ul class="spec-list">
+        <li><b>Тип передней подвески:</b> независимая, пружинная</li>
+        <li><b>Тип задней подвески:</b> независимая, пружинная</li>
+        <li><b>Передние тормоза:</b> дисковые вентилируемые</li>
+        <li><b>Задние тормоза:</b> дисковые вентилируемые</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Размеры</div>
+      <ul class="spec-list">
+        <li><b>Длина:</b> 4705 мм</li>
+        <li><b>Ширина:</b> 1720 мм</li>
+        <li><b>Высота:</b> 1120 мм</li>
+        <li><b>Колёсная база:</b> 2665 мм</li>
+        <li><b>Клиренс:</b> 140 мм</li>
+        <li><b>Ширина передней колеи:</b> 1480 мм</li>
+        <li><b>Ширина задней колеи:</b> 1470 мм</li>
+        <li><b>Размер колёс:</b> 245/40/R18, 265/35/R18</li> 
+      </ul>
+      <div class="vehicle-image">
+        <img src="image/раз34.PNG" alt="Автомобиль">
+      </div>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Эксплуатационные показатели</div>
+      <ul class="spec-list">
+        <li><b>Максимальная скорость:</b> 233 км/ч</li>
+        <li><b>Разгон до 100 км/ч:</b> 7.1 с</li>
+        <li><b>Расход топлива, город/трасса/смешанный:</b> -/-/9.1 л/100 км</li>
+        <li><b>Марка топлива:</b> АИ-95</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Объём и масса</div>
+      <ul class="spec-list">
+        <li><b>Объем багажника мин/макс:</b> 180 л</li>
+        <li><b>Объём топливного бака:</b> 74 л</li>
+        <li><b>Снаряженная масса:</b> 1750 кг</li>
+        <li><b>Полная масса:</b> 1705 кг</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Трансмиссия</div>
+      <ul class="spec-list">
+        <li><b>Коробка передач:</b> Механика</li>
+        <li><b>Количество передач:</b> 5</li>
+        <li><b>Тип привода:</b> задний</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Двигатель</div>
+      <ul class="spec-list">
+        <li><b>Тип двигателя:</b> Бензиновый</li>
+        <li><b>Расположение цилиндров:</b> переднее, продольное</li>
+        <li><b>Объем двигателя:</b> 2498 см³</li>
+        <li><b>Тип наддува:</b> нет</li>
+        <li><b>Максимальная мощность:</b> 200 л.с. (147 кВт) при 6000 об/мин</li>
+        <li><b>Максимальный крутящий момент:</b> 255 Н*м при 4000 об/мин</li>
+        <li><b>Расположение цилиндров:</b> рядное</li>
+        <li><b>Количество цилиндров:</b> 6</li>
+        <li><b>Число клапанов на цилиндр:</b> 4</li>
+        <li><b>Система питания двигателя:</b> распределенный впрыск (многоточечный)</li>
+        <li><b>Степень сжатия:</b> 10</li>
+        <li><b>Диаметр цилиндра и ход поршня:</b> 86.0х71.7 мм</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="car-title">
+    <h1>Nissan Skyline GT-R R33</h1>
+  </div>
+  <div class="specs-container">
+    <div class="spec-block">
+      <div class="spec-title">Модификация 3.8 AMT</div>
+      <ul class="spec-list">
+    <li><b>Объем:</b> 2.6 л</li>
+          <li><b>Топливо:</b> АИ-95</li>
+          <li><b>Мощность:</b> 280 л.с.</li>
+          <li><b>Привод:</b> полный</li>
+          <li><b>Коробка:</b> Механика</li>
+          <li><b>Разгон:</b> 5.5 с</li>
+          <li><b>Тип двигателя:</b> бензиновый</li>
+          <li><b>Расход:</b> 12.1 л</li>
+        </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Общая информация</div>
+      <ul class="spec-list">
+        <li><b>Страна марки:</b> Япония</li>
+        <li><b>Класс автомобиля:</b> D</li>
+        <li><b>Количество дверей:</b> 4</li>
+        <li><b>Количество мест:</b> 5</li>
+        <li><b>Расположение руля:</b> Правый</li> 
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Подвеска и тормоза</div>
+      <ul class="spec-list">
+        <li><b>Тип передней подвески:</b> независимая, пружинная</li>
+        <li><b>Тип задней подвески:</b> независимая, пружинная</li>
+        <li><b>Передние тормоза:</b> дисковые вентилируемые</li>
+        <li><b>Задние тормоза:</b> дисковые вентилируемые</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Размеры</div>
+      <ul class="spec-list">
+        <li><b>Длина:</b> 4720 мм</li>
+        <li><b>Ширина:</b> 1720 мм</li>
+        <li><b>Высота:</b> 1360 мм</li>
+        <li><b>Колёсная база:</b> 2720 мм</li>
+        <li><b>Клиренс:</b> 140 мм</li>
+        <li><b>Ширина передней колеи:</b> 1480 мм</li>
+        <li><b>Ширина задней колеи:</b> 1470 мм</li>
+        <li><b>Размер колёс:</b> 185/70/R14</li> 
+      </ul>
+      <div class="vehicle-image">
+        <img src="image/раз33.PNG" alt="Автомобиль">
+      </div>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Эксплуатационные показатели</div>
+      <ul class="spec-list">
+        <li><b>Максимальная скорость:</b> 197 км/ч</li>
+        <li><b>Разгон до 100 км/ч:</b> 10.8 с</li>
+        <li><b>Расход топлива, город/трасса/смешанный:</b> -/-/9.0 л/100 км</li>
+        <li><b>Марка топлива:</b> АИ-95</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Объём и масса</div>
+      <ul class="spec-list">
+        <li><b>Объём топливного бака:</b> 65 л</li>
+        <li><b>Снаряженная масса:</b> 1300 кг</li>
+        <li><b>Полная масса:</b> 1545 кг</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Трансмиссия</div>
+      <ul class="spec-list">
+        <li><b>Коробка передач:</b> Механика</li>
+        <li><b>Количество передач:</b> 5</li>
+        <li><b>Тип привода:</b> задний</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Двигатель</div>
+      <ul class="spec-list">
+        <li><b>Тип двигателя:</b> Бензиновый</li>
+        <li><b>Расположение цилиндров:</b> переднее, продольное</li>
+        <li><b>Объем двигателя:</b> 1998 см³</li>
+        <li><b>Тип наддува:</b> нет</li>
+        <li><b>Максимальная мощность:</b> 130 л.с. (96 кВт) при 5600 об/мин</li>
+        <li><b>Максимальный крутящий момент:</b> 181 Н*м при 4000 об/мин</li>
+        <li><b>Расположение цилиндров:</b> рядное</li>
+        <li><b>Количество цилиндров:</b> 6</li>
+        <li><b>Число клапанов на цилиндр:</b> 4</li>
+        <li><b>Система питания двигателя:</b> распределенный впрыск (многоточечный)</li>
+        <li><b>Степень сжатия:</b> 10</li>
+        <li><b>Диаметр цилиндра и ход поршня:</b> 78.0х70.0 мм</li>
+      </ul>
+    </div>
+  </div>
+  <div class="car-title">
+    <h1>Nissan Skyline GT-R R32</h1>
+  </div>
+  <div class="specs-container">
+    <div class="spec-block">
+      <div class="spec-title">Модификация 3.8 AMT</div>
+      <ul class="spec-list">
+          <li><b>Объем:</b> 2.6 л</li>
+          <li><b>Топливо:</b> АИ-95</li>
+          <li><b>Мощность:</b> 280 л.с.</li>
+          <li><b>Привод:</b> полный</li>
+          <li><b>Коробка:</b> Механика</li>
+          <li><b>Разгон:</b> 5.8 с</li>
+          <li><b>Тип двигателя:</b> бензиновый</li>
+          <li><b>Расход:</b> 14.2 л</li>
+        </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Общая информация</div>
+      <ul class="spec-list">
+        <li><b>Страна марки:</b> Япония</li>
+        <li><b>Класс автомобиля:</b> S</li>
+        <li><b>Количество дверей:</b> 2</li>
+        <li><b>Количество мест:</b> 4</li>
+        <li><b>Расположение руля:</b> Правый</li> 
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Подвеска и тормоза</div>
+      <ul class="spec-list">
+        <li><b>Тип передней подвески:</b> независимая, пружинная</li>
+        <li><b>Тип задней подвески:</b> независимая, пружинная</li>
+        <li><b>Передние тормоза:</b> дисковые вентилируемые</li>
+        <li><b>Задние тормоза:</b> дисковые вентилируемые</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Размеры</div>
+      <ul class="spec-list">
+        <li><b>Длина:</b> 4545 мм</li>
+        <li><b>Ширина:</b> 1755 мм</li>
+        <li><b>Высота:</b> 1090 мм</li>
+        <li><b>Колёсная база:</b> 2615 мм</li>
+        <li><b>Клиренс:</b> 135 мм</li>
+        <li><b>Ширина передней колеи:</b> 1480 мм</li>
+        <li><b>Ширина задней колеи:</b> 1480 мм</li>
+        <li><b>Размер колёс:</b> 205/55/R16 </li> 
+      </ul>
+      <div class="vehicle-image">
+        <img src="image/раз32.PNG" alt="Автомобиль">
+      </div>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Эксплуатационные показатели</div>
+      <ul class="spec-list">
+        <li><b>Максимальная скорость:</b> 250 км/ч</li>
+        <li><b>Разгон до 100 км/ч:</b> 5.8 с</li>
+        <li><b>Расход топлива, город/трасса/смешанный:</b> -/-/14.2 л/100 км</li>
+        <li><b>Марка топлива:</b> АИ-95</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Объём и масса</div>
+      <ul class="spec-list">
+        <li><b>Объем багажника мин/макс:</b> 275 л</li>
+        <li><b>Объём топливного бака:</b> 72 л</li>
+        <li><b>Снаряженная масса:</b> 1430 кг</li>
+        <li><b>Полная масса:</b> 1157 кг</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Трансмиссия</div>
+      <ul class="spec-list">
+        <li><b>Коробка передач:</b> Механика</li>
+        <li><b>Количество передач:</b> 5</li>
+        <li><b>Тип привода:</b> полный</li>
+      </ul>
+    </div>
+    <div class="spec-block">
+      <div class="spec-title">Двигатель</div>
+      <ul class="spec-list">
+        <li><b>Тип двигателя:</b> Бензиновый</li>
+        <li><b>Расположение цилиндров:</b> переднее, продольное</li>
+        <li><b>Объем двигателя:</b> 2568 см³</li>
+        <li><b>Тип наддува:</b> турбонаддув</li>
+        <li><b>Максимальная мощность:</b> 280 л.с. (206 кВт) при 6800 об/мин</li>
+        <li><b>Максимальный крутящий момент:</b> 353 Н*м при 4400 об/мин</li>
+        <li><b>Расположение цилиндров:</b> рядное</li>
+        <li><b>Количество цилиндров:</b> 6</li>
+        <li><b>Число клапанов на цилиндр:</b> 4</li>
+        <li><b>Система питания двигателя:</b> распределенный впрыск (многоточечный)</li>
+        <li><b>Степень сжатия:</b> 8.5</li>
+        <li><b>Диаметр цилиндра и ход поршня:</b> 86.0x73.7 мм</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><b>Skyline</b>: скорость, практичность и свобода</p>
+            <p><b>Email:</b> <a href="mailto:sk_58@vk.com">sk_58@vk.com</a></p>
+            <p><b>Телефон:</b> <a href="tel:+79211248158">+79211248158</a></p>
+        </div>
+        <div class="footer-social">
+            <a href="https://vk.com/sk_58" target="_blank"><img src="images/vk.png"></a>
+            <a href="https://t.me/andry_skobelev" target="_blank"><img src="images/tg.png"></a>
+        </div>
+        <div class="to-top">
+            <a href="#top" class="to-top-link">Наверх</a>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p><b>Разработчик сайта:</b> Скобелев Андрей</p>
+    </div>
+</footer>
+</body>
+</html>

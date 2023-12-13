@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>История</title>
+    <style>
+body, html {
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    height: 100%;
+    background-color:pink;
+    font-family: Arial, sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+  background: rgba(177, 177, 177, 0.6); 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 55px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%; 
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-container {
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+}
+.logo {
+  max-height: 60px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.logo:hover {
+  cursor: pointer;
+  color: red;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-size: 18px;
+}
+nav a:hover {
+  cursor: pointer;
+  color: red;
+}
+footer {
+    background: black; 
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-info,
+.footer-social,
+.to-top {
+    margin: 10px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+   
+}
+
+.footer-info p a,
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 10px;
+}
+
+.footer-info p a:hover,
+.footer-info a:hover {
+    color: red;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+.to-top-link {
+    display: inline-block;
+    background-color: pink;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.to-top-link:hover {
+    background-color: red;
+}
+.footer-copy {
+    padding-top: 20px;
+}
+section p {
+    font-size: 24px;
+    color: #333;
+    text-indent: 30px;
+}
+.photo-car img {
+    border-radius: 15px;
+    width: 1200px;
+    height: 600px;
+}
+section {
+    padding: 0 5px;
+}
+section h1{
+    font-size: 48px;
+}
+section h2{
+    font-size: 36px;
+}
+@media screen and (max-width: 1000px) {
+ .photo-car img {
+    width: 100%;
+    height: 100%;
+ }
+header {
+    width: auto;
+    height: auto;
+    left: 0;
+    transform: none;
+}
+nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+nav a {
+    display: block;
+    margin: 10px 0;
+}
+}  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="ppp.html" class="logo">
+                <h1>Nissan Skyline</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="ppp1.html">Описание</a>
+            <a href="ppp2.html">Характеристики</a>
+            <a href="ppp3.html">Галерея</a>
+        </nav>
+    </header>
+    <section>
+<h1><b>Nissan Skyline GT-R R32</b></h1>
+<h2><b>Первый полный</b></h2>
+<hr>
+<p>GT-R вернулся в строй в 1989 году. Это вновь было купе Skyline, актуальное на тот момент. 
+    Причем этот GT-R под внутренним обозначением E-BNR32 (сокращенно R32) впервые стал полноприводным. 
+    Японцы разрабатывали мощную двухдверку, чтобы доминировать в туринговой группе А. 
+    И именно автоспорт определил схему привода нового GT-R.</p>
+<center>
+<div class="photo-car">
+<img src="hist/1.jpg">
+</div>
+</center>
+<p>Изначально прототип третьего GT-R был заднеприводным. 
+    Его тестировали с обычным и расточенным наддувным мотором RB25 объемом 2,35 л, выдававшим 317 сил. 
+    Но по правилам группы А литраж турбомотора следовало умножить на коэффициент 1,7, а еще использовать шины шириной 10 дюймов.</p>
+<p>Это автоматически перевело купе в класс 4000-кубовых машин. 
+    Тогда-то в «Ниссане» и решили сделать GT-R полноприводным, чтобы повысить его управляемость и шансы на победы в гонках.</p>
+<center>
+<div class="photo-car">
+<img src="hist/2.jpg">
+</div>
+</center>
+<p>Для купе разработали трансмиссию ATTESA E-TS с подключаемым через многодисковую муфту передком. 
+    Она утяжелила машину на 100 кг, сделав GT-R слишком увесистым для класса 4000 «кубов». 
+    Тогда японцы увеличили объем турбомотора до 2,6 л и поставили шины шириной 11 дюймов, попав в более подходящий по массе для такой машины класс 4500-кубовых гоночных автомобилей.</p>
+<p>Мотор под индексом RB26DETT стал выдавать 600 сил! 
+    И ниссановцы добились желаемого — двухдверка доминировала на трассах.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/3.jpg">
+</div>
+</center>
+<p>Гражданская версия с двигателем, обладавшим невероятным запасом прочности и возможностями для тюнинга, пришлась по душе фанатам скорости. 
+    Несмотря на заявленную отдачу в 280 сил и 353 Н∙м, а также ограниченную законодательно на 180 км/ч максималку, «Годзилла» был способен на многое.</p>
+<p>Его доводкой занимались на Нюрбургринге, «Северную петлю» которого купе прошло за рекордные для серийных машин того времени 8 минут 20 секунд.</p>
+<hr>
+<h1><b>Nissan Skyline GT-R R33</b></h1>
+<h2><b>Эволюция</b></h2>
+<hr>
+<p>Четвертый Skyline GT-R под внутризаводским индексом E-BCNR33 (сокращенно R33) показали в январе 1995 года. 
+    По сути, это была усовершенствованная версия предшественника. 
+    Под капотом находился все тот же невероятно удачный рядный 6-цилиндровый мотор с двумя турбинами и та же механика.</p>
+<p>Он, кстати, прослужил разным поколениям модели в общей сложности 13 лет! 
+    Как и предшественник, GT-R R33 получил ряд спортивных облегченных и продвинутых модификаций.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/4.jpg">
+</div>
+</center>
+<p>Купе вышло в исполнениях N1 и V-Spec. 
+    А для участия в Ле-Мане в подразделении Nismo сделали дорожный заднеприводный 305-сильный GT-R LM с обвесом и другими подвесками. 
+    Под конец жизненного цикла двухдверки, в 1997 году, японцы выпустили лимитированную серию 400-сильных GT-R 400R. Но вместо запланированных 100 машин продали лишь 44. 
+    Последний GT-R R33 сошёл с конвейера 9 ноября 1998 года. 
+    Причем этот экземпляр окрасили в новый цвет — тот же, что и у его преемника под индексом R34.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/5.jpg">
+</div>
+</center>
+<p>Четвертое поколение «заряженной» версии GT-R, давно уже выпускавшейся только с кузовом купе, запомнилось еще и возвращением к корням. 
+    По случаю 40-летия седана Nissan Skyline, в 1997 году, подразделение Nismo впервые за долгие годы предложило клиентам четырехдверный GT-R. 
+    За два года лимитированная версия под названием Autech разошлась тиражом в 447 штук.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/6.jpg">
+</div>
+</center>
+<hr>
+<h1><b>Nissan Skyline GT-R R34</b></h1>
+<h2><b>Последний «Скай»</b></h2>
+<hr>
+<p>Пятое по счету купе GT-R с индексом GF-BNR34 (оно же R34) появилось в десятом поколении «Скайлайна» в январе 1999 года. 
+    Оно стало короче и тяжелее. 
+    Длина кузова уменьшилась на 7,5 см, колесная база — на 5,5 см, а передний свес на 2 см. 
+    У двигателя вырос крутящий момент, а прежнюю механику заменили 6-ступенчатой коробкой фирмы Getrag. 
+    Этот Skyline GT-R стал технологичнее и навороченнее.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/7.jpg">
+</div>
+</center>
+<p>На центральный 6,5-дюймовый дисплей в салоне можно было выводить данные двигателя и прочих систем машины в режиме реального времени. 
+    Купе получило еще больше улучшений и спортивных версий. 
+    Кстати, именно на GT-R этого поколения с синими полосами гонял в боевике «Двойной форсаж» Пол Уокер в роли Брайана О'Коннера.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/8.jpg">
+</div>
+</center>
+<p>А еще в этой генерации «Годзилла» сделала первые шаги в сторону от спорта — в направлении комфорта. 
+    В 2001 году японцы выпустили версию M-spec, где M означает manufacturer. 
+    В этом автомобиле Nissan показал, каким он видит выдающийся спорткар: с более мягкой подвеской, кожаным салоном и обогреваемыми передними креслами.</p>
+<p>Перед тем как снять 34-й «Гэтэр» с производства, Nissan в 2002 году выпустил две финальные версии, посвященные Нюрбургрингу. 
+    Всего было сделано 1003 GT-R в исполнении Nür: 718 купе — GT-R V·Spec II Nür и 285 машин — GT-R M·Spec Nür. 
+    Они отличались оформлением экстерьера и интерьера, доработанным 334-сильным мотором RB26DETT и могли разгоняться до 300 км/ч.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/9.jpg">
+</div>
+</center>
+<hr>
+<h1><b>Nissan GT-R R35</b></h1>
+<h2><b>Новая эра «GTR»</b></h2>
+<hr>
+<p>Поколение «Годзиллы» под индексом CBA-R35 (или просто R35), выпускаемое c конца 2007 года, стало революционным для «Ниссанов» Gran Turismo Racer. 
+    Начиная с этого момента, спорткар превратился в самостоятельную модель, перестав быть двухдверной «заряженной» версией седана, а GT-R из приписки к названию Skyline — в имя собственное. 
+    Новое купе, построенное в стилистике концепт-каров Nissan GT-R 2001 и 2005 годов, отличает оригинальный кузов и уникальная конструкция.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/10.jpg">
+</div>
+</center>
+<p>Nissan GT-R R35 получил мощную V-образную битурбошестерку VR38DETT объемом 3,8 л и особую схему трансмиссии. 
+    Для лучшей развесовки по осям японцы разместили двигатель с отдачей от 485 до 600 сил (в зависимости от года выпуска и версии) спереди, а 6-ступенчатый робот — в пределах базы сзади.</p>
+<p>То есть под машиной параллельно проходят два карданных вала. 
+    Один передает крутящий момент от двигателя к коробке, второй — возвращает от нее часть момента на передние колеса. 
+    В таком виде соотношение массы по осям GT-R составляет 54/46. 
+    Но оно выравнивается до 50/50, когда купе, стартуя и ускоряясь, приседает на корму.</p>
+    <center>
+<div class="photo-car">
+<img src="hist/11.jpg">
+</div>
+</center>
+<p>За почти 10 лет производства нынешний GT-R неоднократно совершенствовался. 
+    За это время он получил несколько особых исполнений: Spec V с разгоном до 100 км/ч за 3,2 с в 2009 году, 530-сильный Egoist со спуртом до «сотни» за 3,04 с и максималкой в 320 км/ч в 2011-м и 600-сильный Nismo в конце 2013-го. 
+    Двигатель GT-R R35, собираемый вручную мастерами Такуми, коих в «Ниссане» всего 6 человек, становился мощнее.</p>
+<p>Робот с двумя сцеплениями делали все шустрее, заставив его щелкать ступенями со скоростью моргания человеческого глаза. 
+    Да и динамика машины выросла. Купе, основательно обновленное в прошлом году, разгоняется до сотни за 2,8 с. И на этом японцы останавливаться не намерены. 
+    История самого доступного из самых быстрых спорткаров продолжается.</p>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><b>Skyline</b>: скорость, практичность и свобода</p>
+            <p><b>Email:</b> <a href="mailto:sk_58@vk.com">sk_58@vk.com</a></p>
+            <p><b>Телефон:</b> <a href="tel:+79211248158">+79211248158</a></p>
+        </div>
+        <div class="footer-social">
+            <a href="https://vk.com/sk_58" target="_blank"><img src="images/vk.png"></a>
+            <a href="https://t.me/andry_skobelev" target="_blank"><img src="images/tg.png"></a>
+        </div>
+        <div class="to-top">
+            <a href="#top" class="to-top-link">Наверх</a>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p><b>Разработчик сайта:</b> Скобелев Андрей</p>
+    </div>
+</footer>
+</body>
+</html>
